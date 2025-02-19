@@ -1,7 +1,26 @@
 {
+  "name": "meteora-cpi",
+  "version": "1.0.0",
+  "description": "A solana swap token using meteora pool via cpi for calculating and analyzing Consumer Price Index (CPI) data.",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "anchor build",
+    "deploy": "anchor deploy",
+    "test": "anchor test",
     "lint:fix": "prettier */*.js \"*/**/*{.js,.ts}\" -w",
     "lint": "prettier */*.js \"*/**/*{.js,.ts}\" --check"
+  },
+  "keywords": ["solana", "cpi", "consumer price index", "meteora", "raydium", "anchor", "cpi calculator"],
+  "type": "module",
+  "author": "John Criswick",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/earthzeta/meteora-cpi.git"
+  },
+  "homepage": "https://github.com/earthzeta/meteora-cpi",
+  "bugs": {
+    "url": "https://github.com/earthzeta/meteora-cpi/issues"
   },
   "dependencies": {
     "@coral-xyz/anchor": "^0.30.0",
